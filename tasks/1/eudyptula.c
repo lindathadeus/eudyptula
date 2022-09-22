@@ -21,11 +21,12 @@ what kernel tree to build it against.
 #include <linux/module.h>
 #include <linux/kernel.h>
 
-static void eudyptula_exit(void) {
+static void eudyptula_exit(void)
+{
 }
 
-static int eudyptula_init(void) {
-  
+static int eudyptula_init(void)
+{
   printk(KERN_DEBUG "Hello World!");
   return 0;
 }
